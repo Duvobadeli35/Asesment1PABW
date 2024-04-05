@@ -25,3 +25,14 @@
         </select><br>
         <button type="submit">Pesan</button>
     </form>
+    <script>
+        function cekForm(){
+            // ambil nilai dari form
+            let jmlBuku = document.getElementById("jumlah").value;
+            let pilihanBuku = document.getElementById("buku").value;
+            
+            if(jmlBuku == "" || isNaN(jmlBuku)|| jmlBuku <= 0){
+                alert("Input Jumlah harus berupa angka dan tidak boleh kosong");            
+                return false;
+            }
+            
