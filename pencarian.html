@@ -41,6 +41,14 @@
             {"nama":"Lupin", "jumlah":2},
             {"nama":"Aladin", "jumlah":2},
             ];
+
+             let bukuDitemukan = false;
+            for (let i = 0; i <  buku.length; i++) {
+                if(buku[i].nama === pilihanBuku){
+                    bukuDitemukan=true;
+                    if(jmlBuku > buku[i].jumlah){
+                        alert(`Maaf, stok ${buku[i].nama} hanya tersedia ${buku[i].jumlah}`);
+                        return false;
             
             if(!bukuDitemukan){
             alert("Buku yang Anda pilih tidak terdaftar")
