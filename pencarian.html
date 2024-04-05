@@ -12,3 +12,16 @@
     <p>NIM: 6701220113</p>
     <p>Kelas: D3SI-4602</p> <br/>
 
+    <h3>Pesan Buku</h3>
+    <form onsubmit="return cekForm()">
+        <label for="jumlah">Jumlah Buku:</label>
+        <input type="number" id="jumlah" name="jumlah"><br>
+        <label for="nama">Pilih Buku</label>
+        <select id="buku" name="buku">
+            <option value="">Pilih Buku...</option>
+            <option value="Sherlock">Sherlock</option>
+            <option value="Lupin">Lupin</option>
+            <option value="Aladin">Aladin</option>
+        </select><br>
+        <button type="submit">Pesan</button>
+    </form>
