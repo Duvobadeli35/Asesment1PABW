@@ -49,7 +49,11 @@
                     if(jmlBuku > buku[i].jumlah){
                         alert(`Maaf, stok ${buku[i].nama} hanya tersedia ${buku[i].jumlah}`);
                         return false;
-            
+                        } else {
+                        alert (`Silahkan ambil buku ${buku[i].nama} `);
+                    }
+                }
+            }
             if(!bukuDitemukan){
             alert("Buku yang Anda pilih tidak terdaftar")
             return false;
